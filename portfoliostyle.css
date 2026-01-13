@@ -1,0 +1,148 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial;
+}
+body{
+	background: #f4f6f8;
+}
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 50px;
+	background: #2c3e50;
+}
+.logo{
+	color: white;
+}
+nav ul{
+	list-style: none;
+	display: flex;
+}
+nav ul li{
+	margin-left: 20px;
+}
+nav ul li a{
+	color: white;
+	text-decoration: none;
+}
+.home{
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: #34495e;
+	color: white; 
+}
+.home span{
+   color: #27ae60;
+}
+.btn{
+	margin-top: 20px;
+	padding: 10px 20px;
+	background: #27ae60;
+	color: white;
+	text-decoration: none;
+	border-radius: 5px;
+}
+section{
+	padding: 60px;
+	text-align: center;
+}
+.skills-box span{
+	display: inline-block;
+	margin: 10px;
+	padding: 10px 15px;
+	background: #2980b9;
+	color: white;
+	border-radius: 5px;
+}
+.project{
+	background: white;
+	padding: 20px;
+	margin:15px auto;
+	width: 60%;
+	border-radius: 8px;
+}
+#contact form{
+	width: 400px;
+    margin: auto;
+}
+#contact input,
+#contact textarea{
+	width: 100%;
+	padding: 10px;
+	margin-top: 10px;
+}
+#contact button{
+	width: 100%;
+	background: #27ae60;
+	color: white;
+	border: none;
+	padding: 10px;
+	margin-top: 15px;
+	cursor: pointer;
+}
+.error{
+	color: red;
+	font-size: 13px;
+}
+footer{
+	background: #2c3e50;
+	color: white;
+	text-align: center;
+	padding: 10px;
+}
+@media (max-width: 768px){
+	nav{
+		flex-direction: column;
+		padding: 15px;
+	}
+	nav a:hover {
+		color: #00c896;
+	}
+	nav ul{
+		flex-direction: column;
+		margin-top: 10px;
+	}
+	nav ul li{
+		margin: 10px 0;
+	}
+	.home{
+		height: auto;
+		padding: 80px 20px;
+		text-align: center;
+	}
+    .home h1{
+	font-size: 26px;
+    }
+    .home p{
+	font-size: 14px;
+    }
+    section{
+    	padding: 40px 15px;
+    }
+    .project{
+    	width: 100%;
+    	padding: 20px;
+    	margin-bottom: 20px;
+    }
+    #contact form{
+    	width: 100%;
+    }
+    .project a {
+    	display: inline-block;
+    	margin-top: 8px;
+    	padding: 8px 16px;
+    	background: #00c896;
+    	color: white;
+    	text-decoration: none;
+    	border-radius: 5px;
+    }
+    .project a:hover {
+    	background: #009e73;
+    }
+}
